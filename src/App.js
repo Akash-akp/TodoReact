@@ -10,12 +10,12 @@ function App() {
       <h1 className='Head'>Todoie App</h1>
       <div className='wrapper'>
         <div className='todo-container'>
-          <Header />
+          <Header title="Todo App"/>
           <div>
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
+            <TodoItem completed={true} task="Eat"/>
+            <TodoItem task="Code"/>
+            <TodoItem task="Sleep"/>
+            <TodoItem task="Repeat"/>
           </div>
           <Button />
         </div>

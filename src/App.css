@@ -18,6 +18,7 @@
 }
 
 .todo-container{
+  z-index: 1;
   width: 300px;
   height: 380px;
   padding: 40px;
