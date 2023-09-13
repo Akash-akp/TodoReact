@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header.jsx';
 import TodoItem from './components/TodoItem.jsx';
 import Button from './components/Button.jsx';
+import CounterComp from './components/CounterComp.jsx'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <h1 className='Head'>Todoie App</h1>
       <div className='wrapper'>
         <div className='todo-container'>
+          <CounterComp />
           <Header title="Todo App"/>
           <div>
             <TodoItem completed={true} task="Eat"/>
