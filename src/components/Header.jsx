@@ -1,7 +1,12 @@
-import React from 'react'
+import React , { useState } from 'react'
 
-const head = (props) =>{
-    return <h1 className='todo-header'>{props.title}</h1>;
+const Head = (props) =>{
+    const [count,SetCount] = useState(0);
+    return (
+    <h1 className='todo-header'>
+        {props.title} <span>({count})</span>
+    </h1>
+    );
 }
 
-export default head;
+export default Head;
